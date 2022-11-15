@@ -2378,26 +2378,7 @@ export default function SwapBox(props) {
           {renderAvailableLongLiquidity()}
           {hasMaxAvailableShort && (
             <div className="Exchange-info-row">
-              <div className="Exchange-info-label">Available Liquidity</div>
-              <div className="align-right">
-                <Tooltip
-                  handle={`${formatAmount(toTokenInfo.maxAvailableShort, USD_DECIMALS, 2, true)}`}
-                  position="right-bottom"
-                  renderContent={() => {
-                    return (
-                      <>
-                        Max {toTokenInfo.symbol} short capacity: $
-                        {formatAmount(toTokenInfo.maxGlobalShortSize, USD_DECIMALS, 2, true)}
-                        <br />
-                        <br />
-                        Current {toTokenInfo.symbol} shorts: $
-                        {formatAmount(toTokenInfo.globalShortSize, USD_DECIMALS, 2, true)}
-                        <br />
-                      </>
-                    );
-                  }}
-                ></Tooltip>
-              </div>
+              
             </div>
           )}
         </div>
@@ -2408,7 +2389,7 @@ export default function SwapBox(props) {
         <div className="Exchange-info-row">
           <div className="Exchange-info-label-button">
             <a
-              href="https://swaps.docs.mycelium.xyz/quick-start-guide/2.-how-to-trade"
+              href="https://arbitrex.gitbook.io/arbitrex/arbitrex/trading"
               target="_blank"
               rel="noopener noreferrer"
             >
